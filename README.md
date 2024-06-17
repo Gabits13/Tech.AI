@@ -1,6 +1,4 @@
-consertar footer e colocar os perfis de todo mundo, 
-
-colocar imagem de cada pacman na pagina pacman.html
+consertar footer e colocar o perfil do fernando
 
 colocar imagens nas de ai_voice.html
 
