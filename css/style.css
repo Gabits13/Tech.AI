@@ -1,118 +1,122 @@
 body {
-    overflow-x: hidden;
-    background-color: #f6f6f6;
-  }
-
-  .navbar {
-    background-color: #3E4DFA; /* Dark blue */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-  }
-
-  .navbar-brand {
-    display: flex;
-    align-items: center;
-    margin: 0 auto;
-  }
-
-  .navbar-brand img {
-    width: 50px;
-    height: 50px;
-  }
-
-  #logo-texto {
-    font-size: 24px;
-    color: white;
-    font-weight: bold;
-    margin-left: 10px;
-  }
-
-  .navbar-toggler {
-    color: white;
-    border: none;
-    font-size: 30px; /*tamanho*/
-
-  }
-
-  .bell-icon {
-    color: white;
-    font-size: 30px; /*tamanho*/
-    cursor: pointer;
-  }
-
-  .sidebar {
-    position: fixed;
-    top: 0;
-    left: -250px;
-    width: 250px;
-    height: 100%;
-    background-color: #3E4DFA;
-    transition: left 0.3s ease-in-out;
-    padding-top: 20px;
-    z-index: 1050;
-  }
-
-  .sidebar.active {
-    left: 0;
-  }
-
-  .sidebar .nav-link {
-    color: white;
-    font-size: 18px;
-    padding: 15px 20px;
-  }
-
-  .back-button {
-    display: none;
-    color: white;
-    font-size: 18px;
-    cursor: pointer;
-    position: absolute;
-    left: 25px;
-    top: 20px;
-  }
-
-  .back-button.active {
-    display: block;
-  }
-
-  .card-title, .card-text {
-    text-align: center;
-    color: black;
-    text-decoration: none;
-   
+  overflow-x: hidden;
+  background-color: #ffffff;
 }
+
+.navbar {
+  background-color: #3E4DFA; /* Dark blue */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.navbar-brand img {
+  width: 50px;
+  height: 50px;
+}
+
+#logo-texto {
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.navbar-toggler {
+  color: white;
+  border: none;
+  font-size: 30px; /* tamanho */
+}
+
+.bell-icon {
+  color: white;
+  font-size: 30px; /* tamanho */
+  cursor: pointer;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: #3E4DFA;
+  transition: left 0.3s ease-in-out;
+  padding-top: 20px;
+  z-index: 1050;
+}
+
+.sidebar.active {
+  left: 0;
+}
+
+.sidebar .nav-link {
+  color: white;
+  font-size: 18px;
+  padding: 15px 20px;
+}
+
+.back-button {
+  display: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  position: absolute;
+  left: 25px;
+  top: 20px;
+}
+
+.back-button.active {
+  display: block;
+}
+
+.card-title,
+.card-text {
+  text-align: center;
+  color: black;
+  text-decoration: none;
+}
+
 .card-title a {
-text-decoration: none;
+  text-decoration: none;
 }
 
+.card-img-top {
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
 
-  .custom-carousel-btn {
-    color: white;
-    border: none;
-  }
+.custom-carousel-btn {
+  color: white;
+  border: none;
+}
 
-  .custom-carousel-btn:hover {
-    background-color: #D1E0FF; 
-  }
+.custom-carousel-btn:hover {
+  background-color: #D1E0FF;
+}
 
-  .footer {
-    background-color: #333;
-    color: white;
-    padding: 20px 0;
-  }
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+}
 
-  .footer a {
-    color: #D1E0FF;
-  }
+.footer a {
+  color: #D1E0FF;
+}
 
-  .footer a:hover {
-    color: white;
-  }
+.footer a:hover {
+  color: white;
+}
 
-  
 /* Estilo para sublinhar os links do footer */
 .footer a {
   text-decoration: none;
