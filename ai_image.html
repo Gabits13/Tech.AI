@@ -69,7 +69,7 @@
 
     <div class="container mt-5">
       <h2 class="text-center">AI's Image Generators</h2>
-      <p class="text-center">Explore the fascinating applications of artificial intelligence in the world of art.</p>
+      <p class="text-center mt-3">Explore the fascinating applications of artificial intelligence in the world of art.</p>
       
       <h2 class="text-center mt-5">Different Aspects of AI Image Generators</h2>
       <div class="row row-cols-1 row-cols-md-2 g-4 mt-3">
@@ -125,7 +125,7 @@
                     <li><i class="bi bi-house"></i> <a href="index.html">Home</a></li>
 					<li><i class="bi bi-controller"></i> <a href="ai_games.html">AI in Games</a></li>
 					<li><i class="bi bi-mic"></i> <a href="ai_voice.html">AI Voice Generators</a></li>
-					<li><i class="bi bi-robot"></i> <a href="index.html">AI ChatBot</a></li>
+					<li><i class="bi bi-robot"></i> <a href="ai_chatbot.html">AI ChatBot</a></li>
 					<li><i class="bi bi-image"></i> <a href="ai_image.html">AI Image Generators</a></li>
               </ul>
             </div>
@@ -238,29 +238,33 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
     <script>
-      document.getElementById('menu-toggler').addEventListener('click', function() {
-        var sidebar = document.getElementById('sidebar');
-        var backButton = document.getElementById('back-button');
-        sidebar.classList.toggle('active');
-        backButton.classList.toggle('active');
+      document.getElementById('menu-toggler').addEventListener('click', function () {
+          var sidebar = document.getElementById('sidebar');
+          var backButton = document.getElementById('back-button');
+          sidebar.classList.toggle('active');
+          backButton.classList.toggle('active');
       });
-
-      document.getElementById('back-button').addEventListener('click', function() {
-        var sidebar = document.getElementById('sidebar');
-        var backButton = document.getElementById('back-button');
-        sidebar.classList.remove('active');
-        backButton.classList.remove('active');
+  
+      document.getElementById('navbar-back-button').addEventListener('click', function () {
+          window.history.back();
       });
-
-      document.getElementById('bell-icon').addEventListener('click', function() {
-        this.classList.toggle('active');
-        if (this.classList.contains('active')) {
-          this.style.color = 'black';
-          alert("You will receive all news from the world of AI's");
-        } else {
-          this.style.color = 'white';
-        }
+  
+      document.getElementById('back-button').addEventListener('click', function () {
+          var sidebar = document.getElementById('sidebar');
+          var backButton = document.getElementById('back-button');
+          sidebar.classList.remove('active');
+          backButton.classList.remove('active');
       });
-    </script>
+  
+      document.getElementById('bell-icon').addEventListener('click', function () {
+          this.classList.toggle('active');
+          if (this.classList.contains('active')) {
+              this.style.color = 'black';
+              alert("You will receive all news from the world of AI's");
+          } else {
+              this.style.color = 'white';
+          }
+      });
+  </script>
   </body>
-</html>
+  </html>
