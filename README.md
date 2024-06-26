@@ -1,8 +1,12 @@
-consertar footer e colocar os perfis de todo mundo, 
+Site Tech.AI feito para fins acadêmicos 
 
-colocar imagem de cada pacman na pagina pacman.html
+Link do site: 
+https://gabits13.github.io/Tech.AI/
 
-colocar imagens nas de ai_voice.html
-
-colocar texto na pagina principal e na pagina ai_image e nas 4 ias image
-
+Colaboradores do projeto:
+Gabriel Santos: https://github.com/Gabits13/
+Gabriel Oliveira: https://github.com/Gogfs
+Guilherme Santos: https://github.com/fantasma1234
+Gustavo Souza: https://github.com/Ioogo
+Enzo Souto: https://github.com/EnzoSouto01
+Fernando Augusto: https://github.com/EliteLeech
