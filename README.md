@@ -1,9 +1,9 @@
-#Site Tech.AI feito para fins acadêmicos 
+<div align= "center"><h2>Site Tech.AI feito para fins acadêmicos</h2> 
 
-##Link do site: 
+Link do site: 
 https://gabits13.github.io/Tech.AI/
 
-Colaboradores do projeto:
+<h3>Colaboradores do projeto:</h3>
 
 --Gabriel Santos: https://github.com/Gabits13/
 
@@ -16,3 +16,4 @@ Colaboradores do projeto:
 --Enzo Souto: https://github.com/EnzoSouto01
 
 --Fernando Augusto: https://github.com/EliteLeech
+</div>
