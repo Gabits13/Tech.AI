@@ -17,7 +17,7 @@
   <body>
     <nav class="navbar navbar-light">
       <div class="container">
-        <button class="navbar-toggler" type="button" id="menu-toggler">
+        <button class="navbar-toggler" type="button" id="menu-toggler" onclick="abirMenu()">
           <i class="bi bi-list"></i>
         </button>
         <a class="navbar-brand" href="index.html">
@@ -32,7 +32,7 @@
 
     <div class="sidebar" id="sidebar">
       <ul class="navbar-nav">
-        <div class="back-button" id="back-button">
+        <div class="back-button" id="back-button" onclick="fecharMenu()">
             <i class="bi bi-arrow-left"></i> Back
           </div>
           <br><br>
@@ -57,7 +57,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="image_ai.html">
+          <a class="nav-link" href="ai_image.html">
             <i class="bi bi-image"></i> AI Image Generators 
           </a>
         </li>
@@ -66,12 +66,17 @@
 
     <!-- IMAGEM INICIAL -->
     <div class="container-fluid w-100 p-0"> 
-             <img style="max-height: 350px; object-fit: cover; object-position: 50% 50%;"  class="d-block w-100" src="img/imagem_inicial.jpg" alt="imagem ilustrativa de ia">
+             <img style="max-height: 500px; object-fit: cover; object-position: 50% 50%;"  class="d-block w-100" src="img/imagem_inicial.jpg" alt="imagem ilustrativa de ia">
     </div>	
 
     <div class="container mt-5">
-      <h2 class="text-center">What is an AI?</h2>
-      <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.</p>
+      <h2 class="text-center mb-2">What is an AI?</h2>
+      <p class="text-justify mt-5">Artificial intelligence (AI) is technology that enables machines to simulate human intelligence and problem-solving. Combined with other technologies like sensors and robotics, AI can perform tasks that usually require human intervention, such as digital assistants, GPS guidance, autonomous vehicles, and generative AI tools.
+
+        As a field of computer science, AI includes machine learning and deep learning. These areas develop algorithms that mimic human decision-making, learning from data to make more accurate predictions over time.
+        
+        AI has undergone many development cycles. On this website, you will explore the various modern uses of AI.
+        </p>
       
       <h2 class="text-center mt-5">AI in different areas</h2>
       <div class="row row-cols-1 row-cols-md-2 g-4 mt-3">
@@ -97,7 +102,7 @@
         </div>
         <div class="col">
           <div class="card h-100 text-center">
-            <a href="" style="text-decoration: none;">
+            <a href="ai_chatbot.html" style="text-decoration: none;">
                 <img src="img/index_chatbot1.jpeg" class="card-img-top" alt="AI chatbot">
             <div class="card-body">
               <h5 class="card-title">AI Chatbot</h5>
@@ -107,7 +112,7 @@
         </div>
         <div class="col">
           <div class="card h-100 text-center">
-            <a href="" style="text-decoration: none;">
+            <a href="ai_image.html" style="text-decoration: none;">
                 <img src="img/index_image1.jpeg" class="card-img-top" alt="Image-generating AI">
             <div class="card-body">
               <h5 class="card-title" >AI Image Generators</h5>
@@ -118,10 +123,15 @@
       </div>
       
       <h2 class="text-center mt-5">About us</h2>
-      <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.</p>
+      <p class="text-center mt-4">We are a small and simple team of developers, just doing an academic paper for our teacher Simone.</p>
     </div>
+    <!-- Botão para abrir o modal -->
+<div class="text-center mt-5">
+  <a href="#" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#githubModal">Explore our profiles on GitHub</a>
+</div>
   
-    <!--footer-->
+ 
+<!--footer-->
 <div class="footer mt-5" style="background: linear-gradient(#3E4DFA, #4286f4 );">
   <div class="container text-left">
       <div class="row mt-3">
@@ -131,8 +141,8 @@
                   <li><i class="bi bi-house"></i> <a href="index.html">Home</a></li>
                   <li><i class="bi bi-controller"></i> <a href="ai_games.html">AI in Games</a></li>
                   <li><i class="bi bi-mic"></i> <a href="ai_voice.html">AI Voice Generators</a></li>
-                  <li><i class="bi bi-robot"></i> <a href="index.html">AI ChatBot</a></li>
-                  <li><i class="bi bi-image"></i> <a href="index.html">AI Image Generators</a></li>
+                  <li><i class="bi bi-robot"></i> <a href="ai_chatbot.html">AI ChatBot</a></li>
+                  <li><i class="bi bi-image"></i> <a href="ai_image.html">AI Image Generators</a></li>
               </ul>
           </div>
           <div class="col">
@@ -183,7 +193,6 @@
       </div>
   </div>
 
-
 <!-- Modal do GitHub -->
 <div class="modal fade" id="githubModal" tabindex="-1" aria-labelledby="githubModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
@@ -193,41 +202,41 @@
               <h5 class="modal-title" id="githubModalLabel">Visite nossos perfis no GitHub</h5>
               <button type="button" class="btn-close custom-bg" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-          <div class="modal-body text-center">
+          <div class="modal-body text-center" style="background-color: #b9b9b9;">
               <ul class="list-unstyled d-flex justify-content-center">
                   <li style="margin-right: 16px;">
-                      <a href="https://github.com/perfil1" target="_blank" class="link-body">
+                      <a href="https://github.com/Gabits13" target="_blank" class="link-body">
                           <img src="img/FotoGabrielS.jpg" alt="Perfil do Gabriel Santos" width="50" height="50" style="border-radius: 50%;">
                       </a>
                   </li>
                   <li style="margin-right: 16px;">
-                      <a href="https://github.com/perfil2" target="_blank" class="link-body">
-                          <img src="img/perfil2.jpg" alt="Perfil 2" width="50" height="50" style="border-radius: 50%;">
+                      <a href="https://github.com/fantasma1234" target="_blank" class="link-body">
+                          <img src="img/FotoGui.jpg" alt="Perfil do Guilherme Pereira" width="50" height="50" style="border-radius: 50%;">
+                      </a> 
+                  </li>
+                  <li style="margin-right: 16px;">
+                      <a href="https://github.com/EnzoSouto01" target="_blank" class="link-body">
+                          <img src="img/FotoEnzo.png" alt="Perfil do Enzo Souto" width="50" height="50" style="border-radius: 50%;">
                       </a>
                   </li>
                   <li style="margin-right: 16px;">
-                      <a href="https://github.com/perfil3" target="_blank" class="link-body">
-                          <img src="img/perfil3.jpg" alt="Perfil 3" width="50" height="50" style="border-radius: 50%;">
+                      <a href="https://github.com/Gogfs" target="_blank" class="link-body">
+                          <img src="img/FotoGabrielO.png" alt="Perfil do Gabriel Oliveira" width="50" height="50" style="border-radius: 50%;">
                       </a>
                   </li>
                   <li style="margin-right: 16px;">
-                      <a href="https://github.com/perfil4" target="_blank" class="link-body">
-                          <img src="img/perfil4.jpg" alt="Perfil 4" width="50" height="50" style="border-radius: 50%;">
-                      </a>
-                  </li>
-                  <li style="margin-right: 16px;">
-                      <a href="https://github.com/perfil5" target="_blank" class="link-body">
-                          <img src="img/perfil5.jpg" alt="Perfil 5" width="50" height="50" style="border-radius: 50%;">
+                      <a href="https://github.com/Ioogo" target="_blank" class="link-body">
+                          <img src="img/FotoGustavo.jpg" alt="Perfil do Gustavo Abreu" width="50" height="50" style="border-radius: 50%;">
                       </a>
                   </li>
                   <li>
-                      <a href="https://github.com/perfil6" target="_blank" class="link-body">
-                          <img src="img/perfil6.jpg" alt="Perfil 6" width="50" height="50" style="border-radius: 50%;">
+                      <a href="https://github.com/EliteLeech" target="_blank" class="link-body">
+                          <img src="img/FotoFernando.png" alt="Perfil do Fernando Augusto" width="50" height="50" style="border-radius: 50%;">
                       </a>
                   </li>
               </ul>
           </div>
-          <div class="modal-footer" style="border-top: none;">
+          <div class="modal-footer" style="border-top: none; background-color: #b9b9b9;">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
           </div>
       </div>
@@ -239,35 +248,46 @@
       <a href="#" class="btn btn-dark btn-m rounded-pill"><i class="bi bi-arrow-up-circle"></i></a>
   </div>
 </div>
-</div>
-      
-  
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
-    <script>
-      document.getElementById('menu-toggler').addEventListener('click', function() {
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  
+  <script>
+    document.getElementById('menu-toggler').addEventListener('click', function () {
         var sidebar = document.getElementById('sidebar');
         var backButton = document.getElementById('back-button');
         sidebar.classList.toggle('active');
         backButton.classList.toggle('active');
-      });
+    });
 
-      document.getElementById('back-button').addEventListener('click', function() {
+    document.getElementById('navbar-back-button').addEventListener('click', function () {
+        window.history.back();
+    });
+
+    document.getElementById('back-button').addEventListener('click', function () {
         var sidebar = document.getElementById('sidebar');
         var backButton = document.getElementById('back-button');
         sidebar.classList.remove('active');
         backButton.classList.remove('active');
-      });
+    });
 
-      document.getElementById('bell-icon').addEventListener('click', function() {
+    document.getElementById('bell-icon').addEventListener('click', function () {
         this.classList.toggle('active');
         if (this.classList.contains('active')) {
-          this.style.color = 'black';
-          alert("You will receive all news from the world of AI's");
+            this.style.color = 'black';
+            alert("You will receive all news from the world of AI's");
         } else {
-          this.style.color = 'white';
+            this.style.color = 'white';
         }
-      });
-    </script>
-  </body>
+    });
+
+    function fecharMenu() {
+     sidebar.classList.remove("active")
+    }
+
+    function abirMenu() {
+      let botao = document.querySelector("#back-button")
+      botao.style.display = 'block'
+    }
+</script>
+</body>
 </html>

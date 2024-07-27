@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="description" content="Explore AI in gaming and its various applications.">
     <meta name="keywords" content="AI, Artificial Intelligence, AI in games, Game AI, AI technology in gaming">
-    <title>TECH.AI - Pacman</title>
+    <title>TECH.AI - The Sims</title>
     <link rel="shortcut icon" href="img/ai_icon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="img/ia_icon.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -88,103 +88,38 @@
     </ul>
 </div>
 
-<!-- GIF INICIAL -->
+<!-- IMG INICIAL -->
 <div class="container w-100 p-0">
-    <video style="max-height: 350px; object-fit: cover; object-position: 50% 50%;" class="d-block w-100" autoplay loop muted>
-        <source src="img/pacmangif.mp4" type="video/mp4">
-        Seu navegador não suporta o elemento de vídeo.
-    </video>
+    <img style="max-height: 350px; object-fit: cover; object-position: 50% 50%;" class="d-block w-100" src="img/thesimsimage.jpg" alt="Imagem IA em Jogos">
 </div>
 
-<div class="container w-100 mt-5">
-    <h2 class="text-center">PacMan</h2>
+<div class="container mt-5">
+    <h2 class="text-center">The Sims</h2>
 
     <!-- Introdução -->
-    <div class="content mt-4">
-        <div class="text-justify">
-            <h3>The AI of Pac-Man's Ghosts</h3>
-            <p>Released in 1980, Pac-Man utilizes a form of AI known as Limited Artificial Intelligence or Weak AI. This approach is based on pre-established parameters within a controlled environment. Pac-Man's ghosts are not only differentiated by their colors, but also by their unique behaviors, which are divided into four main states: stalking, spreading, frightened, and eaten.</p>
-
-            <p>The "scared" and "eaten" states are activated when the player consumes a Power Pellet, turning the ghosts into vulnerable targets. The "chase" and "spread" states are part of the strategy to capture Pac-Man, alternating between moments of coordinated attack and dispersal through the maze. The ghosts switch between these modes four times per cycle, going into continuous chase mode in the last phase until all the marbles are consumed or the player loses a life. Now, let's explore how each ghost contributes to this complex and unique strategy.</p>
-        </div>
+    <div class="mt-5">
+        <h3>The Sims Artificial Intelligence Revolution</h3>
+        <p>The Sims series has always been recognized for its ability to create a virtual world where players can simulate real life in a detailed and personalized way. With the advancement of technology, especially in the area of artificial intelligence (AI), this experience has become even richer and more complex. In this post, we'll explore how AI in The Sims has evolved over the years and the impact this technology has on gameplay and the player experience.</p>
     </div>
 
     <!-- Por que foi criado -->
-    <div class="container w-100 mt-5 mx-5 mb-3">
-        <div class="row">
-            <div class="col-lg-6 mt-2 ">
-                <h2 id="title">Blinky</h2>
-                <p class= "mt-3 text-justify">Blinky, the red ghost, is the most aggressive of the four and focuses on chasing Pac-Man directly. Once it identifies the player's position, it calculates the distance and chooses the most efficient path to reach them. During "spread" mode, Blinky heads to the upper right corner of the map. He has a special trait called "Nervous" or "Furious", activated when Pac-Man consumes a certain number of marbles, causing Blinky to relentlessly chase him to the end of the round.
-                </p>
-            </div>
-            <div class="col-lg-6">
-                <div>
-                    <img src="img/blinkygif.gif" style="max-height: 300px; max-width: 300px; border-radius: 1%" alt="Imagem blinky" class="w-100 mb-3 mx-5 mt-3 img-fluid">
-                </div>
-            </div>
-        </div>
+    <div class="mt-5">
+        <h3>The Evolution of AI in The Sims</h3>
+        <p>Since its launch in 2000, The Sims has used AI to simulate the behavior of its characters, known as Sims. In early versions, the AI was relatively simple, with Sims responding to basic needs like hunger, sleep, and socializing. However, as the editions of the game have progressed, the complexity of the AI has also increased.</p>
+
+        <p>In The Sims 2, for example, Sims began to exhibit memories and aspirations that influenced their long-term behavior. In The Sims 3, the introduction of an open world allowed Sims to have more dynamic daily routines and more complex interactions with the environment and other Sims.</p>
+
+        <p>The Sims 4, on the other hand, brought even more innovations. The AI has been enhanced to allow for more realistic behaviors and more natural social interactions. Sims now have emotions that affect their actions and interactions.</p>
+
+        <p>Sims' ability to make decisions based on their needs, emotions, and social interactions creates a unique dynamic and this keeps players engaged as they never know exactly what might happen next.</p>
     </div>
 
-    <div class="container w-100 mt-3 mx-5 mb-3">
-        <div class="row">
-            <div class="col-lg-6 mt-2 ">
-                <h2 id="title">Inky</h2>
-                <p class= "mt-3 text-justify">Inky, the blue ghost, presents the most complex AI. He starts motionless at the beginning of the level and only starts moving after Pac-Man consumes 30 marbles. Inky combines the position of Pac-Man and Blinky to decide his moves, creating an unpredictable and dangerous dynamic. This combination makes Inky one of the most difficult ghosts to predict, often resulting in unexpected sieges.
-                </p>
-            </div>
-            <div class="col-lg-6">
-                <div>
-                    <img src="img/inky.gif" style="max-height: 300px; max-width: 300px; border-radius: 1%" alt="Imagem blinky" class="w-100 mb-3 mx-5 mt-3 img-fluid">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container w-100 mt-3 mx-5 mb-3">
-        <div class="row">
-            <div class="col-lg-6 mt-2 ">
-                <h2 id="title">Pinky</h2>
-                <p class= "mt-3 text-justify">Pinky, the pink ghost, tries to predict Pac-Man's movements by moving two squares ahead of the direction the player is heading. This strategy forces Pac-Man to constantly change routes, increasing the chances of being cornered. In "spread" mode, Pinky positions herself in the upper left corner of the map, waiting for the moment to surprise the player.
-                </p>
-            </div>
-            <div class="col-lg-6">
-                <div>
-                    <img src="img/pinky.gif" style="max-height: 300px; max-width: 300px; border-radius: 1%" alt="Imagem blinky" class="w-100 mb-3 mx-5 mt-3 img-fluid">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container w-100 mt-3 mx-5 mb-3">
-        <div class="row">
-            <div class="col-lg-6 mt-2 ">
-                <h2 id="title">Clyde</h2>
-                <p class= "mt-3 text-justify">Clyde, the orange ghost, seems less interested in chasing Pac-Man directly, wandering into far-flung areas while keeping a distance of eight houses from the player. However, when he strays further than that, he adopts a behavior similar to Blinky's, starting to chase Pac-Man until the safe distance is re-established. This erratic behavior causes a constant sense of dread, as the player never knows when Clyde might decide to attack.
-                </p>
-            </div>
-            <div class="col-lg-6">
-                <div>
-                    <img src="img/clyde.gif" style="max-height: 300px; max-width: 300px; border-radius: 1%" alt="Imagem blinky" class="w-100 mb-3 mx-5 mt-3 img-fluid">
-                </div>
-            </div>
-        </div>
-    </div>
-
-   
-
-    
-   
-
-    <!-- Conclusion -->
-    <div class="content mt-4">
-        <div class="text">
-            <h3>Conclusion</h3>
-            <p>Pac-Man, with its use of AI, not only set a standard for arcade games, but also demonstrated the power of limited artificial intelligence in developing a higher difficulty through the unique and innovative mechanics present in this classic.</p>
-            <p class="text-center mt-5"> <a  style = "text-decoration: none;"  href="https://www.google.com/logos/2010/pacman10-i.html" target="_blank">PLAY NOW!</a></p>
-        </div>
+    <!-- Como funciona -->
+    <div class="mt-5">
+        <h3>Conclusion</h3>
+        <p>In conclusion, artificial intelligence plays a crucial role in The Sims, turning each player's interaction into something completely different with each attempt. As technology continues to advance, it is to be expected that the AI in The Sims will become even more impressive, providing increasingly complete and interesting gaming experiences.</p>
     </div>
 </div>
-
 
 <!--footer-->
 <div class="footer mt-5" style="background: linear-gradient(#3E4DFA, #4286f4 );">

@@ -17,7 +17,7 @@
   <body>
     <nav class="navbar navbar-light">
       <div class="container">
-        <button class="navbar-toggler" type="button" id="menu-toggler">
+        <button class="navbar-toggler" type="button" id="menu-toggler" onclick="abirMenu()">
           <i class="bi bi-list"></i>
         </button>
         <a class="navbar-brand" href="index.html">
@@ -30,7 +30,7 @@
 
     <div class="sidebar" id="sidebar">
       <ul class="navbar-nav">
-        <div class="back-button" id="back-button">
+        <div class="back-button" id="back-button" onclick="fecharMenu()">
           <i class="bi bi-arrow-left"></i> Back
         </div>
         <br><br>
@@ -55,7 +55,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="image_ai.html">
+          <a class="nav-link" href="ai_image.html">
             <i class="bi bi-image"></i> AI Image Generators 
           </a>
         </li>
@@ -64,19 +64,19 @@
 
     <!-- IMAGEM INICIAL -->
     <div class="container-fluid w-100 p-0">
-      <img style="max-height: 350px; object-fit: cover; object-position: 50% 50%;" class="d-block w-100" src="img/ai_games_banner.jpg" alt="Imagem IA em Jogos"> 
+      <img style="max-height: 500px; object-fit: cover; object-position: 50% 50%;" class="d-block w-100" src="img/ai_voice.jpeg" alt="Imagem IA em Jogos"> 
     </div>
 
     <div class="container mt-5">
       <h2 class="text-center">Voice AI's</h2>
-      <p class="text-center">Imagine a future where communicating with technology is as natural as a conversation between friends; voice AIs are turning this vision into reality.</p>
+      <p class="text-center mt-3">Imagine a future where communicating with technology is as natural as a conversation between friends; voice AIs are turning this vision into reality.</p>
       
       <h2 class="text-center mt-5">Different Aspects of AI in Audio</h2>
       <div class="row row-cols-1 row-cols-md-2 g-4 mt-3">
         <div class="col">
           <div class="card h-100 text-center">
             <a href="murf.html" style="text-decoration: none;">
-              <img src="img/pacmangif3.gif" style="max-height: 300px; object-fit: cover; object-position: 50% 0%;" class="card-img-top" alt="AI in Game Design">
+              <img src="img/murf.jpeg" style="max-height: 360px; object-fit: cover;" class="card-img-top" alt="murf ai">
               <div class="card-body">
                 <h5 class="card-title">Murf</h5>
               </div>
@@ -85,8 +85,8 @@
         </div>
         <div class="col">
           <div class="card h-100 text-center">
-            <a href="playHT.html" style="text-decoration: none;">
-              <img src="img/.jpg" class="card-img-top" alt="AI in Game Testing">
+            <a href="playHT.html" style="max-height: 360px; text-decoration: none;  object-fit: cover;">
+              <img src="img/playht.jpeg" class="card-img-top" alt="play ht">
               <div class="card-body">
                 <h5 class="card-title">Play HT</h5>
               </div>
@@ -95,8 +95,8 @@
         </div>
         <div class="col">
           <div class="card h-100 text-center">
-            <a href="listnr.html" style="text-decoration: none;">
-              <img src="img/ai_game_npcs.jpg" class="card-img-top" alt="AI in Game NPCs">
+            <a href="listnr.html" style="max-height: 360px;  text-decoration: none;  object-fit: cover;">
+              <img src="img/listnr.jpeg" class="card-img-top" alt="listnr">
               <div class="card-body">
                 <h5 class="card-title">Listnr</h5>
               </div>
@@ -105,8 +105,8 @@
         </div>
         <div class="col">
           <div class="card h-100 text-center">
-            <a href="resemble.html" style="text-decoration: none;">
-              <img src="img/ai_game_analytics.jpg" class="card-img-top" alt="AI in Game Analytics">
+            <a href="resemble.html" style="max-height: 350px;  text-decoration: none;  object-fit: cover;">
+              <img src="img/resemble.jpeg" class="card-img-top" alt="Resemble">
               <div class="card-body">
                 <h5 class="card-title">Resemble</h5>
               </div>
@@ -116,7 +116,8 @@
       </div>
     </div>
   
-   <!--footer-->
+
+<!--footer-->
 <div class="footer mt-5" style="background: linear-gradient(#3E4DFA, #4286f4 );">
   <div class="container text-left">
       <div class="row mt-3">
@@ -126,8 +127,8 @@
                   <li><i class="bi bi-house"></i> <a href="index.html">Home</a></li>
                   <li><i class="bi bi-controller"></i> <a href="ai_games.html">AI in Games</a></li>
                   <li><i class="bi bi-mic"></i> <a href="ai_voice.html">AI Voice Generators</a></li>
-                  <li><i class="bi bi-robot"></i> <a href="index.html">AI ChatBot</a></li>
-                  <li><i class="bi bi-image"></i> <a href="index.html">AI Image Generators</a></li>
+                  <li><i class="bi bi-robot"></i> <a href="ai_chatbot.html">AI ChatBot</a></li>
+                  <li><i class="bi bi-image"></i> <a href="ai_image.html">AI Image Generators</a></li>
               </ul>
           </div>
           <div class="col">
@@ -178,7 +179,6 @@
       </div>
   </div>
 
-
 <!-- Modal do GitHub -->
 <div class="modal fade" id="githubModal" tabindex="-1" aria-labelledby="githubModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
@@ -188,41 +188,41 @@
               <h5 class="modal-title" id="githubModalLabel">Visite nossos perfis no GitHub</h5>
               <button type="button" class="btn-close custom-bg" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-          <div class="modal-body text-center">
+          <div class="modal-body text-center" style="background-color: #b9b9b9;">
               <ul class="list-unstyled d-flex justify-content-center">
                   <li style="margin-right: 16px;">
-                      <a href="https://github.com/perfil1" target="_blank" class="link-body">
+                      <a href="https://github.com/Gabits13" target="_blank" class="link-body">
                           <img src="img/FotoGabrielS.jpg" alt="Perfil do Gabriel Santos" width="50" height="50" style="border-radius: 50%;">
                       </a>
                   </li>
                   <li style="margin-right: 16px;">
-                      <a href="https://github.com/perfil2" target="_blank" class="link-body">
-                          <img src="img/perfil2.jpg" alt="Perfil 2" width="50" height="50" style="border-radius: 50%;">
+                      <a href="https://github.com/fantasma1234" target="_blank" class="link-body">
+                          <img src="img/FotoGui.jpg" alt="Perfil do Guilherme Pereira" width="50" height="50" style="border-radius: 50%;">
+                      </a> 
+                  </li>
+                  <li style="margin-right: 16px;">
+                      <a href="https://github.com/EnzoSouto01" target="_blank" class="link-body">
+                          <img src="img/FotoEnzo.png" alt="Perfil do Enzo Souto" width="50" height="50" style="border-radius: 50%;">
                       </a>
                   </li>
                   <li style="margin-right: 16px;">
-                      <a href="https://github.com/perfil3" target="_blank" class="link-body">
-                          <img src="img/perfil3.jpg" alt="Perfil 3" width="50" height="50" style="border-radius: 50%;">
+                      <a href="https://github.com/Gogfs" target="_blank" class="link-body">
+                          <img src="img/FotoGabrielO.png" alt="Perfil do Gabriel Oliveira" width="50" height="50" style="border-radius: 50%;">
                       </a>
                   </li>
                   <li style="margin-right: 16px;">
-                      <a href="https://github.com/perfil4" target="_blank" class="link-body">
-                          <img src="img/perfil4.jpg" alt="Perfil 4" width="50" height="50" style="border-radius: 50%;">
-                      </a>
-                  </li>
-                  <li style="margin-right: 16px;">
-                      <a href="https://github.com/perfil5" target="_blank" class="link-body">
-                          <img src="img/perfil5.jpg" alt="Perfil 5" width="50" height="50" style="border-radius: 50%;">
+                      <a href="https://github.com/Ioogo" target="_blank" class="link-body">
+                          <img src="img/FotoGustavo.jpg" alt="Perfil do Gustavo Abreu" width="50" height="50" style="border-radius: 50%;">
                       </a>
                   </li>
                   <li>
-                      <a href="https://github.com/perfil6" target="_blank" class="link-body">
-                          <img src="img/perfil6.jpg" alt="Perfil 6" width="50" height="50" style="border-radius: 50%;">
+                      <a href="https://github.com/EliteLeech" target="_blank" class="link-body">
+                          <img src="img/FotoFernando.png" alt="Perfil do Fernando Augusto" width="50" height="50" style="border-radius: 50%;">
                       </a>
                   </li>
               </ul>
           </div>
-          <div class="modal-footer" style="border-top: none;">
+          <div class="modal-footer" style="border-top: none; background-color: #b9b9b9;">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
           </div>
       </div>
@@ -234,34 +234,46 @@
       <a href="#" class="btn btn-dark btn-m rounded-pill"><i class="bi bi-arrow-up-circle"></i></a>
   </div>
 </div>
-</div>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
     <script>
-      document.getElementById('menu-toggler').addEventListener('click', function() {
-        var sidebar = document.getElementById('sidebar');
-        var backButton = document.getElementById('back-button');
-        sidebar.classList.toggle('active');
-        backButton.classList.toggle('active');
+      document.getElementById('menu-toggler').addEventListener('click', function () {
+          var sidebar = document.getElementById('sidebar');
+          var backButton = document.getElementById('back-button');
+          sidebar.classList.toggle('active');
+          backButton.classList.toggle('active');
+      });
+  
+      document.getElementById('navbar-back-button').addEventListener('click', function () {
+          window.history.back();
+      });
+  
+      document.getElementById('back-button').addEventListener('click', function () {
+          var sidebar = document.getElementById('sidebar');
+          var backButton = document.getElementById('back-button');
+          sidebar.classList.remove('active');
+          backButton.classList.remove('active');
+      });
+  
+      document.getElementById('bell-icon').addEventListener('click', function () {
+          this.classList.toggle('active');
+          if (this.classList.contains('active')) {
+              this.style.color = 'black';
+              alert("You will receive all news from the world of AI's");
+          } else {
+              this.style.color = 'white';
+          }
       });
 
-      document.getElementById('back-button').addEventListener('click', function() {
-        var sidebar = document.getElementById('sidebar');
-        var backButton = document.getElementById('back-button');
-        sidebar.classList.remove('active');
-        backButton.classList.remove('active');
-      });
+    function fecharMenu() {
+     sidebar.classList.remove("active")
+    }
 
-      document.getElementById('bell-icon').addEventListener('click', function() {
-        this.classList.toggle('active');
-        if (this.classList.contains('active')) {
-          this.style.color = 'black';
-          alert("You will receive all news from the world of AI's");
-        } else {
-          this.style.color = 'white';
-        }
-      });
-    </script>
+    function abirMenu() {
+      let botao = document.querySelector("#back-button")
+      botao.style.display = 'block'
+    }
+  </script>
   </body>
-</html>
+  </html>
